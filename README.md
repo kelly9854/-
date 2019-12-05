@@ -24,7 +24,8 @@ void main() {
 
 	nodePtr = node1; 
 	while (nodePtr != NULL) { 
-		printf("데이터: %d \n", *(int*)nodePtr->dataPtr); 		nodePtr = nodePtr->link;
+		printf("데이터: %d \n", *(int*)nodePtr->dataPtr); 		
+		nodePtr = nodePtr->link;
  }
 }
 NODE* createNode(void* dataPtr) { 
@@ -34,3 +35,5 @@ NODE* createNode(void* dataPtr) {
 	nodePtr->link = NULL; 
 	return nodePtr;
 }
+
+
