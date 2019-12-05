@@ -3,7 +3,9 @@ node생성, link기법 사용
 
 
 #include <stdio.h>
+
 #include <stdlib.h>
+
 typedef struct _node { //node 구조체 선언
 	void* dataPtr;
 	struct _node* link;
